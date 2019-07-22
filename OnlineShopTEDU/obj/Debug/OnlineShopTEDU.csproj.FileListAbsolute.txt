@@ -65,3 +65,11 @@ D:\LEARN\C#\ASPdotNET\OnlineShopTEDU\OnlineShopTEDU\bin\PagedList.dll
 D:\LEARN\C#\ASPdotNET\OnlineShopTEDU\OnlineShopTEDU\bin\PagedList.Mvc.dll
 D:\LEARN\C#\ASPdotNET\OnlineShopTEDU\OnlineShopTEDU\bin\PagedList.xml
 D:\LEARN\C#\ASPdotNET\OnlineShopTEDU\OnlineShopTEDU\bin\PagedList.Mvc.xml
+D:\LEARN\C#\ASPdotNET\OnlineShopTEDU\OnlineShopTEDU\bin\CKFinder.dll
+D:\LEARN\C#\ASPdotNET\OnlineShopTEDU\OnlineShopTEDU\bin\CKFinder_FileEditor.dll
+D:\LEARN\C#\ASPdotNET\OnlineShopTEDU\OnlineShopTEDU\bin\CKFinder_ImageResize.dll
+D:\LEARN\C#\ASPdotNET\OnlineShopTEDU\OnlineShopTEDU\bin\CKFinder_Watermark.dll
+D:\LEARN\C#\ASPdotNET\OnlineShopTEDU\OnlineShopTEDU\bin\CKFinder.pdb
+D:\LEARN\C#\ASPdotNET\OnlineShopTEDU\OnlineShopTEDU\bin\CKFinder_FileEditor.pdb
+D:\LEARN\C#\ASPdotNET\OnlineShopTEDU\OnlineShopTEDU\bin\CKFinder_ImageResize.pdb
+D:\LEARN\C#\ASPdotNET\OnlineShopTEDU\OnlineShopTEDU\bin\CKFinder_Watermark.pdb
