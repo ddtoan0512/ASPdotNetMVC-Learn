@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.705
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineShopTEDU", "OnlineShopTEDU\OnlineShopTEDU.csproj", "{4664C7CB-B576-4DF9-9C0F-D9EEBE2172AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "Model\Model.csproj", "{38699C41-316E-4FCC-BFC7-A01FA6CE083A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4664C7CB-B576-4DF9-9C0F-D9EEBE2172AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4664C7CB-B576-4DF9-9C0F-D9EEBE2172AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4664C7CB-B576-4DF9-9C0F-D9EEBE2172AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4664C7CB-B576-4DF9-9C0F-D9EEBE2172AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38699C41-316E-4FCC-BFC7-A01FA6CE083A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38699C41-316E-4FCC-BFC7-A01FA6CE083A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38699C41-316E-4FCC-BFC7-A01FA6CE083A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38699C41-316E-4FCC-BFC7-A01FA6CE083A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9BB9F4B9-99AB-4F03-A68A-BCE4890B01B7}
+	EndGlobalSection
+EndGlobal
