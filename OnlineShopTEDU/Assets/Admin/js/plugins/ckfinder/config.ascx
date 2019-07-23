@@ -19,7 +19,7 @@
 
 		return Session["USER_SESSION"] != null;
 	}
-
+     
 	/**
 	 * All configuration settings must be defined here.
 	 */
