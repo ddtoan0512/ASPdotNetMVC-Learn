@@ -6,7 +6,7 @@ using System.Web.Mvc;
 
 namespace OnlineShopTEDU.Areas.Admin.Controllers
 {
-    public class ContentController : Controller
+    public class ContentController : BaseController
     {
         // GET: Admin/Content
         public ActionResult Index()
