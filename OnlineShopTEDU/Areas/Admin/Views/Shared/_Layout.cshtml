@@ -29,14 +29,19 @@
         <!-- Page Content -->
         <div id="page-wrapper">
             <div class="container-fluid">
-                <div class="row">
-                    x
+                <div class="row>
                     <div class="col-lg-12">
                         <h1 class="page-header">@RenderSection("header", required: true)</h1>
                     </div>
                     <!-- /.col-lg-12 -->
                 </div>
                 <!-- /.row -->
+                @if (TempData["AlertMessage"] != null)
+                {
+                    <div id="AlertBox" class="alert @TempData["AlertType"] hide">
+                        @TempData["AlertMessage"]
+                    </div>
+                }
 
                 @RenderBody()
             </div>
@@ -62,7 +67,12 @@
     <!--ckeditor-->
     <!-- Custom Theme JavaScript -->
     <script src="~/Assets/Admin/dist/js/sb-admin-2.js"></script>
-
+    <script>
+        $(document).ready(function () {
+            $('#AlertBox').removeClass('hide');
+            $('#AlertBox').delay(1000).slideUp(500);
+        })
+    </script>
     @RenderSection("jsFooter", required: false)
 
 </body>

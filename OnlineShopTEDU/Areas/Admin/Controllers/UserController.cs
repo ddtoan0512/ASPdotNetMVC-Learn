@@ -42,6 +42,7 @@ namespace OnlineShopTEDU.Areas.Admin.Controllers
 
                 if (userID > 0)
                 {
+                    SetAlert("Thêm user thành công !", "success");
                     return RedirectToAction("Index", "User");
                 }
                 else
@@ -55,7 +56,7 @@ namespace OnlineShopTEDU.Areas.Admin.Controllers
         public ActionResult Edit(int id)
         {
             var user = new UserDAO().ViewDetail(id);
-
+            
             return View(user);
         }
 
@@ -77,6 +78,7 @@ namespace OnlineShopTEDU.Areas.Admin.Controllers
 
                 if (result)
                 {
+                    SetAlert("Sửa user thành công !", "success");
                     return RedirectToAction("Index", "User");
                 }
                 else
