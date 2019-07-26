@@ -94,5 +94,16 @@ namespace OnlineShopTEDU.Areas.Admin.Controllers
 
             return RedirectToAction("Index");
         }
+        
+        [HttpPost]
+        public JsonResult ChangeStatus(long id)
+        {
+            var result = new UserDAO().ChangeStatus(id);
+
+            return Json(new
+            {
+                status = result
+            });
+        }
     }
 }

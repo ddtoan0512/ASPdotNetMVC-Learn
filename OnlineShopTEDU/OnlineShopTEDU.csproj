@@ -600,6 +600,7 @@
     <Content Include="Assets\Admin\dist\css\sb-admin-2.css" />
     <Content Include="Assets\Admin\dist\css\timeline.css" />
     <Content Include="Assets\Admin\dist\js\sb-admin-2.js" />
+    <Content Include="Assets\Admin\js\controller\userController.js" />
     <Content Include="Assets\Admin\js\flot-data.js" />
     <Content Include="Assets\Admin\js\jquery.validate.unobtrusive.min.js" />
     <Content Include="Assets\Admin\js\morris-data.js" />

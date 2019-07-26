@@ -32,6 +32,7 @@ namespace OnlineShopTEDU.Areas.Admin.Controllers
         }
 
         [HttpPost]
+        [ValidateInput(false)] // Do gui len ca html
         public ActionResult Edit(Content model)
         {
             if (ModelState.IsValid)
