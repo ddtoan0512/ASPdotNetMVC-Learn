@@ -12,6 +12,12 @@ namespace OnlineShopTEDU.Controllers
         // GET: Home
         public ActionResult Index()
         {
+            ViewBag.Slides = new SlideDAO().ListAll();
+
+            var productDao = new ProductDAO();
+            ViewBag.NewProducts = productDao.ListNewProduct(4);
+            ViewBag.ListFeatureProducts = productDao.ListFeatureProduct(4);
+
             return View();
         }
 
