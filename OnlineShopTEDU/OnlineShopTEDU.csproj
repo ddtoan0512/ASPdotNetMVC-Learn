@@ -1685,6 +1685,12 @@
     <Content Include="Assets\Admin\pages\panels-wells.html" />
     <Content Include="Assets\Admin\pages\tables.html" />
     <Content Include="Assets\Admin\pages\typography.html" />
+    <Content Include="Assets\Client\css\bootstrap-grid.css" />
+    <Content Include="Assets\Client\css\bootstrap-grid.min.css" />
+    <Content Include="Assets\Client\css\bootstrap-reboot.css" />
+    <Content Include="Assets\Client\css\bootstrap-reboot.min.css" />
+    <Content Include="Assets\Client\css\bootstrap.css" />
+    <Content Include="Assets\Client\css\bootstrap.min.css" />
     <Content Include="Assets\Client\css\easy-responsive-tabs.css" />
     <Content Include="Assets\Client\css\global.css" />
     <Content Include="Assets\Client\css\slider.css" />
@@ -1739,9 +1745,11 @@
     <Content Include="Assets\Client\images\twitter.png" />
     <Content Include="Assets\Client\images\value-rating.png" />
     <Content Include="Assets\Client\images\wishlist.png" />
+    <Content Include="Assets\Client\js\bootstrap.min.js" />
     <Content Include="Assets\Client\js\easing.js" />
     <Content Include="Assets\Client\js\easyResponsiveTabs.js" />
     <Content Include="Assets\Client\js\jquery-1.7.2.min.js" />
+    <Content Include="Assets\Client\js\jquery-3.4.1.min.js" />
     <Content Include="Assets\Client\js\jquery.accordion.js" />
     <Content Include="Assets\Client\js\jquery.easing.js" />
     <Content Include="Assets\Client\js\move-top.js" />
@@ -2084,6 +2092,12 @@
     <Content Include="Areas\Admin\Views\Shared\_Navigation.cshtml" />
     <Content Include="Assets\Client\font\Amble-Regular-webfont.ttf" />
     <Content Include="Assets\Client\images\Thumbs.db" />
+    <Content Include="Assets\Client\css\bootstrap-grid.css.map" />
+    <Content Include="Assets\Client\css\bootstrap-grid.min.css.map" />
+    <Content Include="Assets\Client\css\bootstrap-reboot.css.map" />
+    <Content Include="Assets\Client\css\bootstrap-reboot.min.css.map" />
+    <Content Include="Assets\Client\css\bootstrap.css.map" />
+    <Content Include="Assets\Client\css\bootstrap.min.css.map" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
