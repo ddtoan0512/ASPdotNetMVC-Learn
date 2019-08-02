@@ -31,7 +31,9 @@ namespace OnlineShopTEDU.Controllers
         public ActionResult Detail(long id)
         {
             var product = new ProductDAO().ViewDetail(id);
-            return View();
+            ViewBag.Category = new ProductCategoryDAO().ViewDetail(product.CategoryID.Value);
+            ViewBag.RelatedProducts = new ProductDAO().ListRelatedProducts(id);
+            return View(product);
         }
     }
 }

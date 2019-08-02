@@ -30,5 +30,11 @@ namespace Model.DAO
         {
             return db.Products.Find(id);
         }
+
+        public List<Product> ListRelatedProducts(long productId)
+        {
+            var product = db.Products.Find(productId);
+            return db.Products.Where(x => x.ID != productId && x.CategoryID == product.CategoryID).ToList();
+        }
     }
 }
