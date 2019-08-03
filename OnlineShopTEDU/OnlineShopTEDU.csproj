@@ -1685,6 +1685,7 @@
     <Content Include="Assets\Admin\pages\panels-wells.html" />
     <Content Include="Assets\Admin\pages\tables.html" />
     <Content Include="Assets\Admin\pages\typography.html" />
+    <Content Include="Assets\Client\css\all.css" />
     <Content Include="Assets\Client\css\bootstrap-grid.css" />
     <Content Include="Assets\Client\css\bootstrap-grid.min.css" />
     <Content Include="Assets\Client\css\bootstrap-reboot.css" />
@@ -1692,6 +1693,7 @@
     <Content Include="Assets\Client\css\bootstrap.css" />
     <Content Include="Assets\Client\css\bootstrap.min.css" />
     <Content Include="Assets\Client\css\easy-responsive-tabs.css" />
+    <Content Include="Assets\Client\css\fontawesome.min.css" />
     <Content Include="Assets\Client\css\global.css" />
     <Content Include="Assets\Client\css\slider.css" />
     <Content Include="Assets\Client\css\style.css" />
@@ -1748,6 +1750,7 @@
     <Content Include="Assets\Client\js\bootstrap.min.js" />
     <Content Include="Assets\Client\js\easing.js" />
     <Content Include="Assets\Client\js\easyResponsiveTabs.js" />
+    <Content Include="Assets\Client\js\fontawesome.js" />
     <Content Include="Assets\Client\js\jquery-1.7.2.min.js" />
     <Content Include="Assets\Client\js\jquery-3.4.1.min.js" />
     <Content Include="Assets\Client\js\jquery.accordion.js" />
@@ -1756,6 +1759,9 @@
     <Content Include="Assets\Client\js\script.js" />
     <Content Include="Assets\Client\js\slides.min.jquery.js" />
     <Content Include="Assets\Client\js\startstop-slider.js" />
+    <Content Include="Assets\Client\webfonts\fa-brands-400.svg" />
+    <Content Include="Assets\Client\webfonts\fa-regular-400.svg" />
+    <Content Include="Assets\Client\webfonts\fa-solid-900.svg" />
     <Content Include="Content\PagedList.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -2098,6 +2104,18 @@
     <Content Include="Assets\Client\css\bootstrap-reboot.min.css.map" />
     <Content Include="Assets\Client\css\bootstrap.css.map" />
     <Content Include="Assets\Client\css\bootstrap.min.css.map" />
+    <Content Include="Assets\Client\webfonts\fa-brands-400.eot" />
+    <Content Include="Assets\Client\webfonts\fa-brands-400.ttf" />
+    <Content Include="Assets\Client\webfonts\fa-brands-400.woff" />
+    <Content Include="Assets\Client\webfonts\fa-brands-400.woff2" />
+    <Content Include="Assets\Client\webfonts\fa-regular-400.eot" />
+    <Content Include="Assets\Client\webfonts\fa-regular-400.ttf" />
+    <Content Include="Assets\Client\webfonts\fa-regular-400.woff" />
+    <Content Include="Assets\Client\webfonts\fa-regular-400.woff2" />
+    <Content Include="Assets\Client\webfonts\fa-solid-900.eot" />
+    <Content Include="Assets\Client\webfonts\fa-solid-900.ttf" />
+    <Content Include="Assets\Client\webfonts\fa-solid-900.woff" />
+    <Content Include="Assets\Client\webfonts\fa-solid-900.woff2" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
