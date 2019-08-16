@@ -1750,6 +1750,7 @@
     <Content Include="Assets\Client\images\value-rating.png" />
     <Content Include="Assets\Client\images\wishlist.png" />
     <Content Include="Assets\Client\js\bootstrap.min.js" />
+    <Content Include="Assets\Client\js\controller\cartController.js" />
     <Content Include="Assets\Client\js\easing.js" />
     <Content Include="Assets\Client\js\easyResponsiveTabs.js" />
     <Content Include="Assets\Client\js\fontawesome.js" />
@@ -2149,6 +2150,9 @@
     <Content Include="Views\Product\Detail.cshtml" />
     <Content Include="Views\About\Index.cshtml" />
     <Content Include="Views\Cart\Index.cshtml" />
+    <Content Include="Views\Shared\HeaderCart.cshtml" />
+    <Content Include="Views\Cart\Payment.cshtml" />
+    <Content Include="Views\Cart\Success.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

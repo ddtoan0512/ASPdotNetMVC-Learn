@@ -1,4 +1,6 @@
 ﻿using Model.DAO;
+using OnlineShopTEDU.Common;
+using OnlineShopTEDU.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -36,6 +38,19 @@ namespace OnlineShopTEDU.Controllers
             var model = new MenuDAO().ListByGroupId(2);
 
             return PartialView(model);
+        }
+
+        [ChildActionOnly]
+        public PartialViewResult HeaderCart()
+        {
+            var cart = Session[CommonConstants.CartSession];
+            var list = new List<CartItem>();
+            if (cart != null)
+            {
+                list = (List<CartItem>)cart;
+            }
+
+            return PartialView(list);
         }
 
         [ChildActionOnly]

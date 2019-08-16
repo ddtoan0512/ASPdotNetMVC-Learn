@@ -5,6 +5,8 @@ using System.Web;
 using System.Web.Mvc;
 using Model.DAO;
 using OnlineShopTEDU.Models;
+using System.Web.Script.Serialization;
+using Model.EF;
 
 namespace OnlineShopTEDU.Controllers
 {
@@ -16,7 +18,7 @@ namespace OnlineShopTEDU.Controllers
         {
             var cart = Session[CartSession];
             var list = new List<CartItem>();
-            if(cart != null)
+            if (cart != null)
             {
                 list = (List<CartItem>)cart;
             }
@@ -70,5 +72,103 @@ namespace OnlineShopTEDU.Controllers
             }
             return RedirectToAction("Index");
         }
+
+        public JsonResult Delete(long id)
+        {
+            var sessionCart = (List<CartItem>)Session[CartSession];
+            sessionCart.RemoveAll(x => x.Product.ID == id);
+            Session[CartSession] = sessionCart;
+
+            return Json(new
+            {
+                status = true
+            });
+        }
+
+        public JsonResult DeleteAll()
+        {
+            Session[CartSession] = null;
+            return Json(new
+            {
+                status = true
+            });
+        }
+
+        public JsonResult Update(string cartModel)
+        {
+            var jsonCart = new JavaScriptSerializer().Deserialize<List<CartItem>>(cartModel);
+
+            var sessionCart = (List<CartItem>)Session[CartSession];
+
+            foreach (var item in sessionCart)
+            {
+                var jsonItem = jsonCart.SingleOrDefault(x => x.Product.ID == item.Product.ID);
+
+                if (jsonItem != null)
+                {
+                    item.Quantity = jsonItem.Quantity;
+                }
+            }
+
+            Session[CartSession] = sessionCart;
+
+            return Json(new
+            {
+                status = true
+            });
+        }
+
+        public ActionResult Payment()
+        {
+            var cart = Session[CartSession];
+            var list = new List<CartItem>();
+            if (cart != null)
+            {
+                list = (List<CartItem>)cart;
+            }
+
+            return View(list);
+        }
+
+        [HttpPost]
+        public ActionResult Payment(string shipName, string mobile, string address, string email)
+        {
+            var order = new Order();
+            order.CreatedDate = DateTime.Now;
+            order.ShipAddress = address;
+            order.ShipMobile = mobile;
+            order.ShipName = shipName;
+            order.ShipEmail = email;
+
+            var detailDAO = new OrderDetailDAO();
+
+            try
+            {
+                var id = new OrderDAO().Insert(order);
+                var cart = (List<CartItem>)Session[CartSession];
+
+                foreach (var item in cart)
+                {
+                    var orderDetail = new OrderDetail();
+                    orderDetail.ProductID = item.Product.ID;
+                    orderDetail.OrderID = id;
+                    orderDetail.Price = item.Product.Price;
+                    orderDetail.Quantity = item.Quantity;
+                    detailDAO.Insert(orderDetail);
+                }
+            }
+            catch (Exception e)
+            {
+                return Redirect("/loi-thanh-toan");
+            }
+
+            return Redirect("/hoan-thanh");
+        }
+
+        public ActionResult Success()
+        {
+            return View();
+        }
     }
 }
+
