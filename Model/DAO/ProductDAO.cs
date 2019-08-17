@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Model.EF;
+using Model.ViewModel;
 
 namespace Model.DAO
 {
@@ -47,11 +48,27 @@ namespace Model.DAO
         /// </summary>
         /// <param name="categoryId"></param>
         /// <returns></returns>
-        public List<Product> ListByCategoryId(long categoryId, ref int totalRecord, int pageIndex = 1, int pageSize = 2)
+        public List<ProductViewModel> ListByCategoryId(long categoryId, ref int totalRecord, int pageIndex = 1, int pageSize = 2)
         {
             totalRecord = db.Products.Where(x => x.CategoryID == categoryId).Count();
-            var model = db.Products.Where(x => x.CategoryID == categoryId).OrderByDescending(x => x.CreatedDate).Skip((pageIndex-1) * pageIndex).Take(pageSize).ToList();
-            return model; 
+            var model = from a in db.Products
+                        join b in db.ProductCategories
+                        on a.CategoryID equals b.ID
+                        where a.CategoryID == categoryId
+                        select new ProductViewModel()
+                        {
+                            CateMetaTitle = b.MetaTitle,
+                            CateName = b.Name,
+                            CreatedDate = a.CreatedDate,
+                            ID = a.ID,
+                            Images = a.Image,
+                            Name = a.Name,
+                            MetaTitle = a.MetaTitle,
+                            Price = a.Price,
+                        };
+
+            model.OrderByDescending(x => x.CreatedDate).Skip((pageIndex - 1) * pageIndex).Take(pageSize).ToList();
+            return model.ToList();
         }
     }
 }
