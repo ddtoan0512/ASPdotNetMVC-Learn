@@ -7,6 +7,8 @@ using Model.DAO;
 using OnlineShopTEDU.Models;
 using System.Web.Script.Serialization;
 using Model.EF;
+using Common;
+using System.Configuration;
 
 namespace OnlineShopTEDU.Controllers
 {
@@ -140,12 +142,13 @@ namespace OnlineShopTEDU.Controllers
             order.ShipName = shipName;
             order.ShipEmail = email;
 
-            var detailDAO = new OrderDetailDAO();
 
             try
             {
                 var id = new OrderDAO().Insert(order);
                 var cart = (List<CartItem>)Session[CartSession];
+                var detailDAO = new OrderDetailDAO();
+                decimal total = 0;
 
                 foreach (var item in cart)
                 {
@@ -155,7 +158,22 @@ namespace OnlineShopTEDU.Controllers
                     orderDetail.Price = item.Product.Price;
                     orderDetail.Quantity = item.Quantity;
                     detailDAO.Insert(orderDetail);
+
+                    total += (item.Product.Price.GetValueOrDefault(0) * item.Quantity);
                 }
+
+                string content = System.IO.File.ReadAllText(Server.MapPath("~/Assets/Client/template/neworder.html"));
+
+                content = content.Replace("{{CustomerName}}", shipName);
+                content = content.Replace("{{Phone}}", mobile);
+                content = content.Replace("{{Email}}", email);
+                content = content.Replace("{{Address}}", address);
+                content = content.Replace("{{Total}}", total.ToString("N0"));
+
+                var toEmail = ConfigurationManager.AppSettings["ToEmailAddress"].ToString(); //email quan tri
+
+                new MailHelper().SendMail(toEmail, "Đơn hàng mới từ Online Shop", content);
+                new MailHelper().SendMail(email, "Đơn hàng mới từ Online Shop", content);
             }
             catch (Exception e)
             {

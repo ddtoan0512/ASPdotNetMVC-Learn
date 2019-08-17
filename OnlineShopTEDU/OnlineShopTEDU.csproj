@@ -1762,6 +1762,7 @@
     <Content Include="Assets\Client\js\script.js" />
     <Content Include="Assets\Client\js\slides.min.jquery.js" />
     <Content Include="Assets\Client\js\startstop-slider.js" />
+    <Content Include="Assets\Client\template\neworder.html" />
     <Content Include="Assets\Client\webfonts\fa-brands-400.svg" />
     <Content Include="Assets\Client\webfonts\fa-regular-400.svg" />
     <Content Include="Assets\Client\webfonts\fa-solid-900.svg" />
@@ -2169,6 +2170,10 @@
     <Content Include="Scripts\jquery-3.3.1.min.map" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{03A96206-D22D-45B8-B20F-129F2AF39283}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Model\Model.csproj">
       <Project>{38699c41-316e-4fcc-bfc7-a01fa6ce083a}</Project>
       <Name>Model</Name>
