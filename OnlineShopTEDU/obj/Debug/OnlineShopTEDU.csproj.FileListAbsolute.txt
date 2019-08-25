@@ -75,3 +75,8 @@ D:\LEARN\C#\ASPdotNET\OnlineShopTEDU\OnlineShopTEDU\bin\CKFinder_ImageResize.pdb
 D:\LEARN\C#\ASPdotNET\OnlineShopTEDU\OnlineShopTEDU\bin\CKFinder_Watermark.pdb
 D:\LEARN\C#\ASPdotNET\OnlineShopTEDU\OnlineShopTEDU\bin\Common.dll
 D:\LEARN\C#\ASPdotNET\OnlineShopTEDU\OnlineShopTEDU\bin\Common.pdb
+D:\LEARN\C#\ASPdotNET\OnlineShopTEDU\OnlineShopTEDU\bin\BotDetect.dll
+D:\LEARN\C#\ASPdotNET\OnlineShopTEDU\OnlineShopTEDU\bin\BotDetect.Web.Mvc.dll
+D:\LEARN\C#\ASPdotNET\OnlineShopTEDU\OnlineShopTEDU\bin\System.Data.SQLite.dll
+D:\LEARN\C#\ASPdotNET\OnlineShopTEDU\OnlineShopTEDU\bin\System.Data.SQLite.xml
+D:\LEARN\C#\ASPdotNET\OnlineShopTEDU\OnlineShopTEDU\bin\System.Data.SQLite.dll.config
