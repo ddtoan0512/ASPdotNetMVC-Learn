@@ -1,0 +1,6 @@
+D:\LEARN\C#\ASPdotNET\OnlineShopTEDU\StaticResource\bin\Debug\StaticResource.dll
+D:\LEARN\C#\ASPdotNET\OnlineShopTEDU\StaticResource\bin\Debug\StaticResource.pdb
+D:\LEARN\C#\ASPdotNET\OnlineShopTEDU\StaticResource\obj\Debug\StaticResources.csprojAssemblyReference.cache
+D:\LEARN\C#\ASPdotNET\OnlineShopTEDU\StaticResource\obj\Debug\StaticResources.csproj.CoreCompileInputs.cache
+D:\LEARN\C#\ASPdotNET\OnlineShopTEDU\StaticResource\obj\Debug\StaticResource.dll
+D:\LEARN\C#\ASPdotNET\OnlineShopTEDU\StaticResource\obj\Debug\StaticResource.pdb

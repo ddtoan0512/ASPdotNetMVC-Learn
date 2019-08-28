@@ -1,0 +1,10 @@
+D:\LEARN\C#\ASPdotNET\OnlineShopTEDU\StaticResources\bin\Debug\StaticResources.dll
+D:\LEARN\C#\ASPdotNET\OnlineShopTEDU\StaticResources\bin\Debug\StaticResources.pdb
+D:\LEARN\C#\ASPdotNET\OnlineShopTEDU\StaticResources\bin\Debug\en\StaticResources.resources.dll
+D:\LEARN\C#\ASPdotNET\OnlineShopTEDU\StaticResources\obj\Debug\StaticResources.Resources.resources
+D:\LEARN\C#\ASPdotNET\OnlineShopTEDU\StaticResources\obj\Debug\StaticResources.Resources.en.resources
+D:\LEARN\C#\ASPdotNET\OnlineShopTEDU\StaticResources\obj\Debug\StaticResources.csproj.GenerateResource.cache
+D:\LEARN\C#\ASPdotNET\OnlineShopTEDU\StaticResources\obj\Debug\StaticResources.csproj.CoreCompileInputs.cache
+D:\LEARN\C#\ASPdotNET\OnlineShopTEDU\StaticResources\obj\Debug\en\StaticResources.resources.dll
+D:\LEARN\C#\ASPdotNET\OnlineShopTEDU\StaticResources\obj\Debug\StaticResources.dll
+D:\LEARN\C#\ASPdotNET\OnlineShopTEDU\StaticResources\obj\Debug\StaticResources.pdb

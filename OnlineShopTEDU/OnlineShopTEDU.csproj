@@ -2202,6 +2202,10 @@
       <Project>{38699c41-316e-4fcc-bfc7-a01fa6ce083a}</Project>
       <Name>Model</Name>
     </ProjectReference>
+    <ProjectReference Include="..\StaticResources\StaticResources.csproj">
+      <Project>{9fb84251-952e-4dae-b48a-237ba23e3d15}</Project>
+      <Name>StaticResources</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

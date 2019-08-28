@@ -1,13 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.29201.188
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.779
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineShopTEDU", "OnlineShopTEDU\OnlineShopTEDU.csproj", "{4664C7CB-B576-4DF9-9C0F-D9EEBE2172AD}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "Model\Model.csproj", "{38699C41-316E-4FCC-BFC7-A01FA6CE083A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{03A96206-D22D-45B8-B20F-129F2AF39283}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StaticResources", "StaticResources\StaticResources.csproj", "{9FB84251-952E-4DAE-B48A-237BA23E3D15}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{03A96206-D22D-45B8-B20F-129F2AF39283}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{03A96206-D22D-45B8-B20F-129F2AF39283}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{03A96206-D22D-45B8-B20F-129F2AF39283}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9FB84251-952E-4DAE-B48A-237BA23E3D15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9FB84251-952E-4DAE-B48A-237BA23E3D15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9FB84251-952E-4DAE-B48A-237BA23E3D15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9FB84251-952E-4DAE-B48A-237BA23E3D15}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
