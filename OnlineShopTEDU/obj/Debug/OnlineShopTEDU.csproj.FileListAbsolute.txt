@@ -80,3 +80,5 @@ D:\LEARN\C#\ASPdotNET\OnlineShopTEDU\OnlineShopTEDU\bin\BotDetect.Web.Mvc.dll
 D:\LEARN\C#\ASPdotNET\OnlineShopTEDU\OnlineShopTEDU\bin\System.Data.SQLite.dll
 D:\LEARN\C#\ASPdotNET\OnlineShopTEDU\OnlineShopTEDU\bin\System.Data.SQLite.xml
 D:\LEARN\C#\ASPdotNET\OnlineShopTEDU\OnlineShopTEDU\bin\System.Data.SQLite.dll.config
+D:\LEARN\C#\ASPdotNET\OnlineShopTEDU\OnlineShopTEDU\bin\Facebook.dll
+D:\LEARN\C#\ASPdotNET\OnlineShopTEDU\OnlineShopTEDU\bin\Facebook.xml
