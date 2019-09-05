@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using System.Xml;
+using System.Xml.Linq;
 using Model.DAO;
 using Model.EF;
 using OnlineShopTEDU.Common;
@@ -107,5 +109,7 @@ namespace OnlineShopTEDU.Areas.Admin.Controllers
                 status = result
             });
         }
+
+        
     }
 }

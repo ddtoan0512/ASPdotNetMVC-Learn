@@ -182,7 +182,9 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\CartItem.cs" />
+    <Compile Include="Models\DistrictModel.cs" />
     <Compile Include="Models\LoginModel.cs" />
+    <Compile Include="Models\ProvinceModel.cs" />
     <Compile Include="Models\RegisterModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Common\UserLogin.cs" />
@@ -1719,6 +1721,7 @@
     <Content Include="Assets\Client\css\global.css" />
     <Content Include="Assets\Client\css\slider.css" />
     <Content Include="Assets\Client\css\style.css" />
+    <Content Include="Assets\Client\data\Provinces_Data.xml" />
     <Content Include="Assets\Client\images\about_img.jpg" />
     <Content Include="Assets\Client\images\arrow-next.png" />
     <Content Include="Assets\Client\images\arrow-prev.png" />
@@ -1772,6 +1775,7 @@
     <Content Include="Assets\Client\js\bootstrap.min.js" />
     <Content Include="Assets\Client\js\controller\cartController.js" />
     <Content Include="Assets\Client\js\controller\contactController.js" />
+    <Content Include="Assets\Client\js\controller\userController.js" />
     <Content Include="Assets\Client\js\easing.js" />
     <Content Include="Assets\Client\js\easyResponsiveTabs.js" />
     <Content Include="Assets\Client\js\fontawesome.js" />

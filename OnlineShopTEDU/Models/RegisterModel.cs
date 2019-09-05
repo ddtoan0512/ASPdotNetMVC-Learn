@@ -38,5 +38,11 @@ namespace OnlineShopTEDU.Models
         [Display(Name = "Điện thoại")]
         public string Phone  { get; set; }
 
+        [Display(Name = "Tỉnh/thành")]
+        public string ProvinceID { get; set; }
+
+        [Display(Name = "Quận/huyện")]
+        public string DistrictID { get; set; }
+
     }
 }
