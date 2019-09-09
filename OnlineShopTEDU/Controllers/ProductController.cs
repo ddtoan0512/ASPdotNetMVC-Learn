@@ -22,6 +22,7 @@ namespace OnlineShopTEDU.Controllers
             return PartialView(model);
         }
 
+
         public ActionResult Category(long cateID, int page = 1, int pageSize = 2)
         {
             var category = new CategoryDAO().ViewDetail(cateID);
@@ -45,6 +46,7 @@ namespace OnlineShopTEDU.Controllers
             return View(model);
         }
 
+        [OutputCache(CacheProfile = "Cache1ForProduct")]
         public ActionResult Detail(long id)
         {
             var product = new ProductDAO().ViewDetail(id);

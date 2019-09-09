@@ -25,6 +25,7 @@ namespace OnlineShopTEDU.Controllers
 
 
         [ChildActionOnly]
+        [OutputCache(Duration = 3600 * 24)]
         public ActionResult MainMenu()
         {
             var model = new MenuDAO().ListByGroupId(1);
@@ -33,6 +34,7 @@ namespace OnlineShopTEDU.Controllers
         }
 
         [ChildActionOnly]
+        [OutputCache(Duration = 3600 * 24)]
         public ActionResult TopMenu()
         {
             var model = new MenuDAO().ListByGroupId(2);
@@ -54,6 +56,7 @@ namespace OnlineShopTEDU.Controllers
         }
 
         [ChildActionOnly]
+        [OutputCache(Duration = 3600 * 24)]
         public ActionResult Footer()
         {
             var model = new FooterDAO().GetFooter();
