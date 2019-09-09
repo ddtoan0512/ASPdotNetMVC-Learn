@@ -81,6 +81,13 @@ namespace OnlineShopTEDU
            );
 
             routes.MapRoute(
+               name: "Search",
+               url: "tim-kiem",
+               defaults: new { controller = "Product", action = "Search", id = UrlParameter.Optional },
+               namespaces: new[] { "OnlineShopTEDU.Controllers" }
+           );
+
+            routes.MapRoute(
                name: "Register",
                url: "dang-ky",
                defaults: new { controller = "User", action = "Login", id = UrlParameter.Optional },
