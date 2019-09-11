@@ -17,3 +17,5 @@ D:\LEARN\C#\ASPdotNET\OnlineShopTEDU\Model\obj\Debug\Model.csproj.CoreCompileInp
 D:\LEARN\C#\ASPdotNET\OnlineShopTEDU\Model\obj\Debug\Model.csproj.CopyComplete
 D:\LEARN\C#\ASPdotNET\OnlineShopTEDU\Model\obj\Debug\Model.dll
 D:\LEARN\C#\ASPdotNET\OnlineShopTEDU\Model\obj\Debug\Model.pdb
+D:\LEARN\C#\ASPdotNET\OnlineShopTEDU\Model\bin\Debug\Common.dll
+D:\LEARN\C#\ASPdotNET\OnlineShopTEDU\Model\bin\Debug\Common.pdb

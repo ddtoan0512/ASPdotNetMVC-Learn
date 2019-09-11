@@ -5,15 +5,19 @@ using System.Web;
 using System.Web.Mvc;
 using Model.DAO;
 using Model.EF;
+using OnlineShopTEDU.Common;
 
 namespace OnlineShopTEDU.Areas.Admin.Controllers
 {
     public class ContentController : BaseController
     {
         // GET: Admin/Content
-        public ActionResult Index()
+        public ActionResult Index(string searchString, int page = 1, int pageSize = 10)
         {
-            return View();
+            var dao = new ContentDAO();
+            var model = dao.ListAllPaging(searchString, page, pageSize);
+            ViewBag.SearchString = searchString;
+            return View(model);
         }
 
         public ActionResult Create() {
@@ -28,7 +32,7 @@ namespace OnlineShopTEDU.Areas.Admin.Controllers
             SetViewBag(content.CategoryID);
 
 
-            return View();
+            return View(content);
         }
 
         [HttpPost]
@@ -45,9 +49,16 @@ namespace OnlineShopTEDU.Areas.Admin.Controllers
         }
 
         [HttpPost]
+        [ValidateInput(false)]
         public ActionResult Create(Content model)
         {
             if (ModelState.IsValid) {
+                var session = (UserLogin)Session[CommonConstants.USER_SESSION];
+                model.CreatedBy = session.UserName;
+                var culture = Session[CommonConstants.CurrentCulture];
+                model.Language = culture.ToString();
+                new ContentDAO().Create(model);
+                return RedirectToAction("Index");
 
             }
 

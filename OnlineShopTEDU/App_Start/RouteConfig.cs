@@ -25,6 +25,27 @@ namespace OnlineShopTEDU
             );
 
             routes.MapRoute(
+                name: "News",
+                url: "tin-tuc",
+                defaults: new { controller = "Content", action = "Index", id = UrlParameter.Optional },
+                namespaces: new[] { "OnlineShopTEDU.Controllers" }
+            );
+
+            routes.MapRoute(
+                name: "News Detail",
+                url: "tin-tuc/{metatitle}-{id}",
+                defaults: new { controller = "Content", action = "Detail", id = UrlParameter.Optional },
+                namespaces: new[] { "OnlineShopTEDU.Controllers" }
+            );
+
+            routes.MapRoute(
+                name: "Tags",
+                url: "tag/{tagId}",
+                defaults: new { controller = "Content", action = "Tag", id = UrlParameter.Optional },
+                namespaces: new[] { "OnlineShopTEDU.Controllers" }
+            );
+
+            routes.MapRoute(
                 name: "Product Detail",
                 url: "chi-tiet/{metatitle}-{id}",
                 defaults: new { controller = "Product", action = "Detail", id = UrlParameter.Optional },

@@ -97,6 +97,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{03a96206-d22d-45b8-b20f-129f2af39283}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
     <ProjectReference Include="..\StaticResources\StaticResources.csproj">
       <Project>{9fb84251-952e-4dae-b48a-237ba23e3d15}</Project>
       <Name>StaticResources</Name>
