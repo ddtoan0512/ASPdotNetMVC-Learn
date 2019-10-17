@@ -10,22 +10,27 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <title>Free Home Shoppe Website Template | Home :: w3layouts</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href="~/Assets/Client/css/bootstrap.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    @*<link href="~/Assets/Client/css/bootstrap.css" rel="stylesheet" />
     <link href="~/Assets/Client/css/all.css" rel="stylesheet" />
     <link href="~/Assets/Client/css/fontawesome.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link href="/Assets/Client/css/style.css" rel="stylesheet" type="text/css" media="all" />
     <link href="/Assets/Client/css/slider.css" rel="stylesheet" type="text/css" media="all" />
     <link href="~/Assets/Client/css/bootstrap-social.css" rel="stylesheet" />
-    <link href="~/Assets/Client/css/jquery-ui.css" rel="stylesheet" />
+    <link href="~/Assets/Client/css/jquery-ui.css" rel="stylesheet" />*@
+
+    @Styles.Render("~/bundles/core");
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="/Assets/Client/js/jquery-3.4.1.min.js"></script>
+    @*<script src="/Assets/Client/js/jquery-3.4.1.min.js"></script>
     <script src="~/Assets/Client/js/jquery-ui.js"></script>
     <script src="~/Assets/Client/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="/Assets/Client/js/move-top.js"></script>
     <script type="text/javascript" src="/Assets/Client/js/easing.js"></script>
-    <script type="text/javascript" src="/Assets/Client/js/startstop-slider.js"></script>
+    <script type="text/javascript" src="/Assets/Client/js/startstop-slider.js"></script>*@
+    @Scripts.Render("~/bundles/jscore");
+
+
 </head>
 <body>
     <div class="wrap">
@@ -93,7 +98,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         });</script>
     <a href="#" id="toTop"><span id="toTopHover"> </span></a>
 
-    <script src="~/Assets/Client/js/controller/baseController.js"></script>
+    @*<script src="~/Assets/Client/js/controller/baseController.js"></script>*@
+    @Scripts.Render("~/bundles/controller");
     @RenderSection("jsFooter",required:false);
 </body>
 </html>

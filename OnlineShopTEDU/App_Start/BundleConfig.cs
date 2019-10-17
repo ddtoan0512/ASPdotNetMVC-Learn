@@ -8,23 +8,29 @@ namespace OnlineShopTEDU
         // For more information on bundling, visit https://go.microsoft.com/fwlink/?LinkId=301862
         public static void RegisterBundles(BundleCollection bundles)
         {
-            bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
-                        "~/Scripts/jquery-{version}.js"));
+            bundles.Add(new ScriptBundle("~/bundles/jscore").Include(
+                        "~/Assets/Client/js/jquery-3.4.1.min.js",
+                        "~/Assets/Client/js/jquery-ui.js",
+                       "~/Assets/Client/js/bootstrap.min.js",
+                       "~/Assets/Client/js/move-top.js",
+                       "~/Assets/Client/js/easing.js",
+                       "~/Assets/Client/js/startstop-slider.js"));
 
-            bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
-                        "~/Scripts/jquery.validate*"));
+            bundles.Add(new ScriptBundle("~/bundle/controller").Include(
+                        "~/Assets/Client/js/controller/baseController.js"));
 
-            // Use the development version of Modernizr to develop with and learn from. Then, when you're
-            // ready for production, use the build tool at https://modernizr.com to pick only the tests you need.
-            bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
-                        "~/Scripts/modernizr-*"));
-
-            bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
-                      "~/Scripts/bootstrap.js"));
-
-            bundles.Add(new StyleBundle("~/Content/css").Include(
-                      "~/Content/bootstrap.css",
+            bundles.Add(new StyleBundle("~/bundles/core").Include(
+                      "~/Assets/Client/css/bootstrap.css",
+                      "~/Assets/Client/css/all.css",
+                      "~/Assets/Client/css/fontawesome.css",
+                      "~/Assets/Client/css/style.css",
+                      "~/Assets/Client/css/slider.css",
+                      "~/Assets/Client/css/bootstrap-social.css",
+                      "~/Assets/Client/css/jquery-ui.css",
                       "~/Content/site.css"));
+
+            BundleTable.EnableOptimizations = true;
+
         }
     }
 }
