@@ -8,6 +8,7 @@ namespace OnlineShopTEDU
         // For more information on bundling, visit https://go.microsoft.com/fwlink/?LinkId=301862
         public static void RegisterBundles(BundleCollection bundles)
         {
+
             bundles.Add(new ScriptBundle("~/bundles/jscore").Include(
                         "~/Assets/Client/js/jquery-3.4.1.min.js",
                         "~/Assets/Client/js/jquery-ui.js",
@@ -16,7 +17,7 @@ namespace OnlineShopTEDU
                        "~/Assets/Client/js/easing.js",
                        "~/Assets/Client/js/startstop-slider.js"));
 
-            bundles.Add(new ScriptBundle("~/bundle/controller").Include(
+            bundles.Add(new ScriptBundle("~/bundles/controller").Include(
                         "~/Assets/Client/js/controller/baseController.js"));
 
             bundles.Add(new StyleBundle("~/bundles/core").Include(
