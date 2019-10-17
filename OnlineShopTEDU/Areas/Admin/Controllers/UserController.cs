@@ -15,6 +15,7 @@ namespace OnlineShopTEDU.Areas.Admin.Controllers
     public class UserController : BaseController
     {
         // GET: Admin/User
+        [HasCredential(RoleID = "VIEW_USER")]
         public ActionResult Index(string searchString, int page = 1, int pageSize = 10)
         {
             var userDAO = new UserDAO();
@@ -24,12 +25,14 @@ namespace OnlineShopTEDU.Areas.Admin.Controllers
         }
 
         [HttpGet]
+        [HasCredential(RoleID = "ADD_USER")]
         public ActionResult Create()
         {
             return View();
         }
 
         [HttpPost]
+        [HasCredential(RoleID = "ADD_USER")]
         public ActionResult Create(User user)
         {
 
@@ -55,6 +58,7 @@ namespace OnlineShopTEDU.Areas.Admin.Controllers
             return View("Index");
         }
 
+        [HasCredential(RoleID = "EDIT_USER")]
         public ActionResult Edit(int id)
         {
             var user = new UserDAO().ViewDetail(id);
@@ -63,6 +67,7 @@ namespace OnlineShopTEDU.Areas.Admin.Controllers
         }
 
         [HttpPost]
+        [HasCredential(RoleID = "EDIT_USER")]
         public ActionResult Edit(User user)
         {
 
@@ -92,6 +97,7 @@ namespace OnlineShopTEDU.Areas.Admin.Controllers
         }
 
         [HttpDelete]
+        [HasCredential(RoleID = "DELETE_USER")]
         public ActionResult Delete(int id)
         {
             new UserDAO().Delete(id);
@@ -100,6 +106,7 @@ namespace OnlineShopTEDU.Areas.Admin.Controllers
         }
         
         [HttpPost]
+        [HasCredential(RoleID = "EDIT_USER")]
         public JsonResult ChangeStatus(long id)
         {
             var result = new UserDAO().ChangeStatus(id);

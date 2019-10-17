@@ -8,3 +8,4 @@ D:\LEARN\C#\ASPdotNET\OnlineShopTEDU\StaticResources\obj\Debug\StaticResources.c
 D:\LEARN\C#\ASPdotNET\OnlineShopTEDU\StaticResources\obj\Debug\en\StaticResources.resources.dll
 D:\LEARN\C#\ASPdotNET\OnlineShopTEDU\StaticResources\obj\Debug\StaticResources.dll
 D:\LEARN\C#\ASPdotNET\OnlineShopTEDU\StaticResources\obj\Debug\StaticResources.pdb
+D:\LEARN\C#\ASPdotNET\OnlineShopTEDU\StaticResources\obj\Debug\StaticResources.csprojAssemblyReference.cache
